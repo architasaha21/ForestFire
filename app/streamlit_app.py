@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import os
 
 st.set_page_config(page_title="Fire Risk Map", layout="wide")
 
@@ -14,6 +14,7 @@ st.markdown("This map shows the Sampled  predicted fire risk categorized by prob
 
 @st.cache_data
 def load_data(npz_path="sampled_data/fire_risk_demo_data_1mill.npz"):
+    npz_path = os.path.join(os.path.dirname(__file__), "sampled_data", "fire_risk_demo_data_1mill.npz")
     data = np.load(npz_path, allow_pickle=True)
     lat = data["latitude"]
     lon = data["longitude"]
