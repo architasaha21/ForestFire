@@ -1,0 +1,72 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #171923;
+  color: #e2e8f0;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.dashboard-subtitle {
+  color: #a0aec0;
+  font-weight: 400 !important;
+}
+
+.section-title {
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.map-container {
+  margin: 2rem 0;
+  background-color: #1a202c;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-point-count {
+  color: #a0aec0;
+  margin-bottom: 1rem !important;
+}
+
+.analysis-section {
+  margin-top: 2rem;
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .dashboard-content {
+    padding: 1rem;
+  }
+} 
