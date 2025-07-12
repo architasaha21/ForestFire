@@ -29,12 +29,9 @@ const Dashboard = () => {
         // In development, use mock data
         // In production, you would fetch from your API
         let data;
-        if (import.meta.env.DEV) {
-          data = getMockData();
-        } else {
-          const response = await fetch('/data/fire_risk_data.json');
-          data = await response.json();
-        }
+        const response = await fetch('/data/fire_risk_data.json');
+        data = await response.json();
+
         
         setFireData(data);
         
