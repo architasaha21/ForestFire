@@ -3,12 +3,13 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, CircularProgress } from '@mui/material';
 import Dashboard from './components/Dashboard/Dashboard';
+import RightDrawer from './components/RightDrawer';
 import './App.css';
 
 // Create a dark theme
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'dark', 
     primary: {
       main: '#3182ce',
     },
@@ -58,7 +59,10 @@ function App() {
           <CircularProgress size={60} />
         </Box>
       ) : (
-        <Dashboard />
+        <Box position="relative">
+          <Dashboard />
+          <RightDrawer />
+        </Box>
       )}
     </ThemeProvider>
   );
