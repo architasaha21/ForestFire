@@ -17,9 +17,9 @@ const RISK_COLORS = {
 };
 
 const INITIAL_VIEW_STATE = {
-  longitude: 84.8700,  // Centered on Odisha, India
-  latitude: 20.9517,
-  zoom: 6,
+  longitude: 79.128,   // Center of Uttarakhand
+  latitude: 30.0668,
+  zoom: 7,
   pitch: 0,
   bearing: 0
 };
