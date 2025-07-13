@@ -1,6 +1,7 @@
 .dashboard-container {
   display: flex;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #171923;
   color: #e2e8f0;
 }

@@ -1,0 +1,10 @@
+.home-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #171923;
+}
+
+/* Add smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+} 

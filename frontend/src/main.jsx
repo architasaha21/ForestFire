@@ -6,12 +6,12 @@ import App from './App';
 import './index.css';
 
 // Create a mock data file for development
-import { createMockData } from './utils/createMockData';
+// import { createMockData } from './utils/createMockData';
 
-// Only in development, create mock data if it doesn't exist
-if (import.meta.env.DEV) {
-  createMockData();
-}
+// // Only in development, create mock data if it doesn't exist
+// if (import.meta.env.DEV) {
+//   createMockData();
+// }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
