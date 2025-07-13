@@ -1,0 +1,109 @@
+.features-section {
+  padding: 100px 0;
+  background-color: #171923;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgba(49, 130, 206, 0.1);
+  border: 1px solid rgba(49, 130, 206, 0.3);
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: #3182ce;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.section-subtitle {
+  color: #a0aec0;
+  line-height: 1.6;
+  /* text-align: left; */
+}
+
+.feature-card {
+  background-color: #1a202c;
+  border-radius: 12px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.feature-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  
+}
+
+.feature-description {
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+.features-showcase {
+  background-color: #1a202c;
+  border-radius: 16px;
+  padding: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dashboard-preview {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-image-placeholder {
+  width: 100%;
+  height: 350px;
+  background: rgba(49, 130, 206, 0.1);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  /* This is where you would add the actual image as a background */
+  /* background-image: url('/path/to/dashboard-preview.jpg'); */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+  
+  .features-showcase {
+    padding: 30px;
+  }
+} 

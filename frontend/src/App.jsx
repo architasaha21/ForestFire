@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, CircularProgress } from '@mui/material';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
+import HomePage from './components/Home/HomePage';
 import './App.css';
 
 // Create a dark theme
@@ -23,6 +25,9 @@ const darkTheme = createTheme({
       primary: '#e2e8f0',
       secondary: '#a0aec0',
     },
+    error: {
+      main: '#e53e3e',
+    }
   },
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -50,16 +55,27 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      {loading ? (
+  if (loading) {
+    return (
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
         <Box className="loading-screen">
           <CircularProgress size={60} />
         </Box>
-      ) : (
-        <Dashboard />
-      )}
+      </ThemeProvider>
+    );
+  }
+
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }

@@ -1,0 +1,13 @@
+.header {
+  background: rgba(23, 25, 35, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Add gradient effect on hover for the Get Started button */
+.MuiButton-containedError:hover {
+  background: linear-gradient(45deg, #f44336, #ff9800) !important;
+  box-shadow: 0 4px 20px rgba(244, 67, 54, 0.4) !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+} 

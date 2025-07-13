@@ -1,0 +1,75 @@
+.cta-section {
+  padding: 80px 0;
+  background-color: #171923;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-paper {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%) !important;
+  border-radius: 16px !important;
+  padding: 60px !important;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cta-title {
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #a0aec0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta-subtitle {
+  color: #a0aec0;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.cta-button {
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  background: linear-gradient(90deg, #e53e3e, #ed8936) !important;
+  box-shadow: 0 10px 20px rgba(229, 62, 62, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(229, 62, 62, 0.4) !important;
+}
+
+.cta-background-element {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.cta-element-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #e53e3e 0%, transparent 70%);
+  top: -100px;
+  right: -50px;
+}
+
+.cta-element-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #3182ce 0%, transparent 70%);
+  bottom: -80px;
+  left: 10%;
+}
+
+@media (max-width: 768px) {
+  .cta-paper {
+    padding: 40px 30px !important;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+  }
+} 
